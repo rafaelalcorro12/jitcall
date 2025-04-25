@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Bienvenido a jitCall</h1>
+  <p>Esta es la página principal de la aplicación.</p>
+
+  <ion-button expand="full" routerLink="/add-contact">Agregar Contacto</ion-button>
+
+  <ion-button expand="full" (click)="logout()">Cerrar Sesión</ion-button>
+</ion-content>
